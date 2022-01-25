@@ -21,7 +21,7 @@ class WordleListBot(object):
             i += 1
         raise ValueError("Word " + word + " is not in the list")
 
-    def return_guess(self):
+    def return_guess(self) -> str:
         while len(self.sorted_words) > 0:
             word = self.sorted_words.pop(0)
             valid = self.__valid_gray__(word) and self.__valid_green__(
@@ -57,7 +57,7 @@ class WordleListBot(object):
                 return False
         return True
 
-    def recieve_feedback(self, guess, feedback):
+    def recieve_feedback(self, guess: str, feedback: str):
         if len(feedback) != 5:
             return
         for i in range(5):
