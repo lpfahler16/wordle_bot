@@ -72,7 +72,7 @@ class WordleListBot(object):
                 if guess[i] in self.gray:
                     self.gray.remove(guess[i])
 
-    def game_over(self):
+    def game_over(self) -> bool:
         return len(self.green) == 5
 
 
