@@ -22,3 +22,11 @@ def update_guess(self, guess: str)                      # Tells the view what th
 def get_feedback(self) -> str                           # Gets the feedback that the view has acquired
 def game_over(self)                                     # Tells the view that the game is over
 ```
+
+## Working with the controllers
+
+Every controller has 1 method:
+
+```
+def play(self)                                          # Starts the play between the model and view
+```
