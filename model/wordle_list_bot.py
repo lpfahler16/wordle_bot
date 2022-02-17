@@ -16,7 +16,7 @@ class WordleListBot(object):
     def index_of_word(self, word):
         i = 0
         while i < len(self.sorted_words):
-            if self.sorted_words[i][0] == word:
+            if self.sorted_words[i] == word:
                 return i
             i += 1
         raise ValueError("Word " + word + " is not in the list")
